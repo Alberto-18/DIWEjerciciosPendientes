@@ -9,21 +9,22 @@
             <fieldset>
                 <legend>Introduce tus datos</legend>
                 <form action="ejemplo.php" method="get">
-                    <p>Nombre:<input type="text" name="nombre" size="40" placeholder="Kike"></p>
-                    <p>Apellido:<input type="text" name="apellido" size="40" placeholder="Sainz"></p>
+                    <p>Nombre:<input type="text" name="nombre" size="40" placeholder="Kike" required></p>
+                    <p>Apellido:<input type="text" name="apellido" size="40" placeholder="Sainz" required></p>
                     <p>
                         Hombre<input type="radio" name="h" value="h"> 
                         Mujer<input type="radio" name="m" value="m"> 
                         Otro <input type="radio" name="o" value="o"> 
                     </p>
-                    <p>E-mail <input type="text" name="email" placeholder="tu email"></p>
-                    <p>Password:<input type="password" name="password" minlength="10"> </p>
+                    <p>E-mail <input type="text" name="email" placeholder="email" required></p>
+                    <p>Password:<input type="password" name="password" minlength="5" maxlength="10"> </p>
                     <p>Birthday<input type="date" name="fecha"></p>
-                    <p>Acepto las condiciones de uso<input type="checkbox" name="checkbox" ></p>
+                    <p>Acepto las condiciones de uso<input type="checkbox" name="checkbox" required></p>
 
                     <input type="submit" value="Sudmit">
 
                 </form>
+
             </fieldset>
 
         </section>
